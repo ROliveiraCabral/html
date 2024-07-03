@@ -7,10 +7,10 @@
   </head>
   <body>
     <form onsubmit="" method="get">
-      <label>Nome:</label>
+      <label>Nome:</label><br />
       <input type="text" name="name" />
       <br /><br />
-      <label>Cargo:</label>
+      <label>Cargo:</label><br />
       <select name="role">
         <option value="">Selecione o cargo</option>
         <option value="Analista">Analista</option>
@@ -20,8 +20,16 @@
         <option value="Diretor">Diretor</option>
       </select>
       <br /><br />
-      <label>Assunto:</label>
+      <label>Assunto:</label><br />
       <input type="text" name="subject" />
+      <br /><br />
+      <label>Mensagem:</label><br />
+      <textarea
+        name="mensagem"
+        rows="10"
+        cols="60"
+        placeholder="escreva aqui..."
+      ></textarea>
       <br /><br />
       <button type="submit">Enviar</button>
     </form>
@@ -33,6 +41,14 @@
     <p>
       * você pode utilizar o <strong>atributo 'selected'</strong> na
       <strong>tag 'option'</strong> para um valor aparecer inicialmente
+    </p>
+    <p>
+      * você pode utilizar o <strong>atributo 'rows'</strong> na
+      <strong>tag 'textarea'</strong> para fixar altura/linhas
+    </p>
+    <p>
+      * você pode utilizar o <strong>atributo 'cols'</strong> na
+      <strong>tag 'textarea'</strong> para fixar largura/colunas
     </p>
   </body>
 </html>
